@@ -1,0 +1,53 @@
+# Product Requirements Document (PRD)
+
+## Project Title
+Agno Customer Service RAG Agent Platform
+
+## Overview
+Build a customer-facing support agent using the Agno framework. The initial version will use a single Retrieval-Augmented Generation (RAG) agent to answer support queries. The system will be architected for extensibility, allowing for the addition of specialized agents and agent teams as requirements grow.
+
+## Goals
+- Deploy a customer service RAG agent using Agno (core, API, and UI repos)
+- Provide accurate, context-aware answers to customer support queries
+- Optimize the RAG pipeline over time by introducing specialized agents (to be determined)
+- Design for seamless expansion to agent teams and new support workflows (e.g., ticket submission)
+- Maintain modularity and scalability throughout
+
+## Initial Scope
+- Implement a single customer-facing RAG agent using Agno
+- Integrate with Agno API backend and Agno UI frontend
+- Provide support query answering via web chat interface
+- Ensure the system is easy to extend with additional agents and workflows
+
+## Out of Scope (for initial version)
+- Multi-agent teams (will be added after RAG agent is proven)
+- Ticket submission or advanced workflow automation (future milestones)
+
+## Future Scope (after successful RAG deployment)
+- Add specialized agents for improved RAG (e.g., knowledge, escalation, sentiment analysis)
+- Implement agent teams for complex workflows (e.g., ticketing, escalation, analytics)
+- Expand support channels and integrations as needed
+- Build and deploy a customer-facing chat widget/app for end users, integrated with the Agno backend
+
+## Tech Stack
+- Agno core (Python)
+- Agno API (FastAPI, Postgres)
+- Agno UI (Next.js, TypeScript)
+
+## Key Requirements
+- Use latest versions of Agno core, API, and UI
+- All Python code in a virtual environment
+- All work tracked and managed via Task Master (tasks, subtasks, status)
+- Precision: implement exactly what is specified, no extras
+- Follow official documentation for setup and dependencies
+
+## Open Questions
+- What data sources will the RAG agent use for retrieval (e.g., support docs, knowledge base)?
+- What authentication or access control is needed for the customer-facing UI?
+- What are the expected support query types and volume?
+- Are there specific integrations or APIs required for future ticketing workflows?
+
+## Next Steps
+1. Parse this PRD into tasks and subtasks using Task Master.
+2. Implement the initial RAG agent and web interface.
+3. Gather feedback and iterate on agent/team design as requirements evolve.

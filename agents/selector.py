@@ -30,5 +30,4 @@ def get_agent(
         return get_agno_assist(model_id=model_id, user_id=user_id, session_id=session_id, debug_mode=debug_mode)
     elif agent_id == AgentType.FINANCE_AGENT:
         return get_finance_agent(model_id=model_id, user_id=user_id, session_id=session_id, debug_mode=debug_mode)
-
     raise ValueError(f"Agent: {agent_id} not found")
